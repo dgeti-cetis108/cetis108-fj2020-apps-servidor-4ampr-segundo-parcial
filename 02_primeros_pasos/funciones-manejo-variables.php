@@ -18,6 +18,14 @@ if (isset($demo)) {
 // empty == false == null
 $clean = false;
 if (empty($clean)) {
-    echo 'La variable $clean no tiene valor alguno aún.';
+    echo 'La variable $clean no tiene valor alguno aún.'."\n";
 }
-// TODO: revisar las funciones restantes y agregar ejemplos
+// Done: revisar las funciones restantes y agregar ejemplos
+$nombre = "Bidkar";
+if (isset($nombre)) {
+    echo $nombre."\n";
+}
+unset($nombre);
+if (isset($nombre) == false) {
+    echo "Variable \$nombre no declarada o igual a NULL";
+}
